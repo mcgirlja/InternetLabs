@@ -1,0 +1,11 @@
+{
+  "name": "lab_2",
+  "version": "0.1.0",
+  "description": "Lab based on coursework",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "James Rowntree",
+  "license": "ISC"
+}
