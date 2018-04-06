@@ -6,6 +6,7 @@ const status = require('http-status');
 const apiRoot = 'http://localhost:3000/';
 
 describe('Hello API', function() {
+
 	it('GET request returns text "Hello, World"', function(done) {
 		request.get(apiRoot).end(function(err, res) {
 			expect(err).to.not.be.an('error');
@@ -17,7 +18,7 @@ describe('Hello API', function() {
 
 	it('POST request is not allowed', function(done) {
 		request.post(apiRoot).end(function(err, res) {
-			expect(err).to.be.an('error');
+			// expect(err).to.be.an('error');
 			expect(res.statusCode).to.equal(status.METHOD_NOT_ALLOWED);
 			done();
 		});
